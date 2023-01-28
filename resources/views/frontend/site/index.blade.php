@@ -107,7 +107,7 @@
                 <li>turgutsalgin5534@gmail.com</li>
               </ul>
             </div>
-
+<!-- comment -->
             <h3 class="resume-title">Education</h3>
             @foreach($educations as $education)
               <div class="resume-item">
