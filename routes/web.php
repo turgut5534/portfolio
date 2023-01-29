@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\SiteController;
 use App\Http\Controllers\Admin\LoginController;
+use Illuminate\Support\Facades\Artisan;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +21,7 @@ Route::get('/boss-logout', [LoginController::class, 'logout'])->name('admin.logo
 Route::get('/', [SiteController::class, 'index'])->name('site.index');
 Route::get('lang/change', [SiteController::class, 'change'])->name('changeLang');
 
-Route::get('/login', [SiteController::class, 'index'])->name('site.index');
+Route::get('/login', [SiteController::class, 'index'])->name('site.login');
 
 Route::get('/config-clear', function() {
     Artisan::call('config:clear');
@@ -29,6 +30,12 @@ Route::get('/config-clear', function() {
 
 Route::get('/config-cache', function() {
     Artisan::call('config:cache');
+    // Do whatever you want either a print a message or exit
+});
+
+
+Route::get('/route-cache', function() {
+    Artisan::call('route:cache');
     // Do whatever you want either a print a message or exit
 });
 
