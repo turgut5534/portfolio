@@ -3,7 +3,7 @@
 @section('content')
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Turgut Salgınnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</h1>
+      <h1>Turgut Salgın</h1>
       <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
     </div>
   </section><!-- End Hero -->
@@ -21,7 +21,7 @@
         
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="{{ asset('assets/img/turgut.jpg') }}  " class="img-fluid" alt="">
+            <img src="{{ asset('assets/frontend/img/turgut.jpg') }}  " class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Full Stack Developer &amp; Web Developer.</h3>
@@ -182,9 +182,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="{{ asset('frontend/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="{{ asset('frontend/img/portfolio/portfolio-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>

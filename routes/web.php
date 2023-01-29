@@ -45,4 +45,5 @@ Route::get('/view-clear', function() {
 Route::get('/storage-link', function() {
     Artisan::call('storage:link');
     // Do whatever you want either print a message or exit
+    return redirect()->route('site.index')
 });
