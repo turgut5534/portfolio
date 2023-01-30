@@ -21,7 +21,7 @@
         
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="{{ asset('uploads/turgut.jpg') }}" class="img-fluid" alt="turgut.jpg">
+            <img src="{{ asset('turgut.jpg') }}" class="img-fluid" alt="turgut.jpg">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Full Stack Developer &amp; Web Developer.</h3>
