@@ -23,34 +23,4 @@ Route::get('lang/change', [SiteController::class, 'change'])->name('changeLang')
 
 Route::get('/login', [SiteController::class, 'index'])->name('site.login');
 
-Route::get('/config-clear', function() {
-    Artisan::call('config:clear');
-    // Do whatever you want either a print a message or exit
-});
-
-Route::get('/config-cache', function() {
-    Artisan::call('config:cache');
-    // Do whatever you want either a print a message or exit
-});
-
-
-Route::get('/route-cache', function() {
-    Artisan::call('route:cache');
-    // Do whatever you want either a print a message or exit
-});
-
-Route::get('/cache-clear', function() {
-    Artisan::call('cache:clear');
-    // Do whatever you want either print a message or exit
-});
-
-Route::get('/view-clear', function() {
-    Artisan::call('view:clear');
-    // Do whatever you want either print a message or exit
-});
-
-Route::get('/storage-link', function() {
-    Artisan::call('storage:link');
-    // Do whatever you want either print a message or exit
-    return redirect()->route('site.index');
-});
+Route::get('send-mail', [SiteController::class, 'sendMail']);
