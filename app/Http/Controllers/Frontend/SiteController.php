@@ -38,7 +38,10 @@ class SiteController extends Controller
         ];
 
         try {
-            Mail::to('turgutsalgin5534@gmail.com')->send(new DemoMail($mailData));
+            Mail::raw('Hello world', function ($message) {
+                $message->to('turgutsalgin5534@gmail.com')
+                    ->from('turgutsalgin3455@gmail.com');
+            });
            
             dd("Email is sent successfully.");
         } catch(\Exception $e) {
